@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatah Haron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <img src="epitech_img.png" alt="Epitech Logo">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="login-nav">
+          <button id="login-btn" class="btn-login">Connexion</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Popup Login -->
+  <div id="login-popup" class="login-popup">
+    <div class="login-popup-content">
+      <span id="close-login-popup" class="close">&times;</span>
+      <h2>Connexion</h2>
+      <form id="login-form">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+        <button type="submit" class="btn-login-submit">Se connecter</button>
+      </form>
+      <p id="error-message" class="error"></p>
+    </div>
+  </div>
+  
+  <section>
+  <main>
+    <div id="home" class="section hero" style="background-image: url('background.jpg'); background-size: cover; background-position: center;">
+      <div class="hero-content">
+        <h1 id="typewriter">Welcome to my Portfolio...</h1>
+        <h1 id="typewriter">Fatah Haron</h1>
+        <a href="FATAH HARON.pdf" class="btn download">Télécharger le CV</a>
+      </div>
+      <div class="hero-image">
+        <img src="moi.png" alt="Fatah Haron">
+      </div>
+    </div>
+  </section>
+
+  <div id="about" class="section about-section">
+    <h2>À propos de moi</h2>
+
+    <a href="https://www.linkedin.com/in/haron-fatah-b3b664203/" class="btn">
+      <img src="image.png" alt="Mon image" />
+      
+      <a href="https://www.instagram.com/haronfth/" class="btn2">
+      <img src="insta.png" alt="Mon image" /> 
+    </a>
+
+    <div class="about-content">
+      <div class="about-box">
+        <p>Je m'appelle Haron Fatah, j'ai 20 ans, et je suis actuellement en semestre d'immersion en codage à EPITECH sur le campus de Barcelone. Mon établissement d'origine est NEOMA Business School, où je suis en 2ᵉ année du programme TEMA, axé sur la gestion de projets et l'innovation.</p>
+      </div>
+    </div>
+  
+    <div class="about2">
+      <p>À EPITECH, je développe mes compétences en programmation, notamment en HTML, CSS, JavaScript, et Python, pour concevoir et réaliser des solutions web. Ce portfolio reflète mon parcours, mes projets, et mes aspirations, en combinant mes expériences académiques et ma passion pour la technologie.</p>
+    </div>
+  </div>
+  
+    
+<section>
+    <div id="skills" class="section">
+      <h2>Mes Compétences</h2>
+      <div class="skills">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-php"></i>
+          <p>PHP</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-mySQL"></i>
+          <p>mySQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="e-commerce-image1.png" alt="Projet 1">
+          <h3>Projet 1</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contactez-moi</h2>
+      <form action="https://formspree.io/f/mwpkwklz" method="POST">
+        <!-- Ajout des attributs name pour chaque champ -->
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+    
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
